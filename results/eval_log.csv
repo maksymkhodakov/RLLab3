@@ -1,0 +1,2 @@
+env_steps,episodes,mean,std,min,max,lr,loss,mean_q,wall_time
+50000,16,-48.47,34.85,-76.55,52.65,9.99e-05,0.1740,-3.70,304.5
