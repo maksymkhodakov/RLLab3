@@ -19,3 +19,195 @@ Episode 160	Steps 72418	Score -24.7	Avg100 -18.9	Eps 0.783	Loss 0.080	Q -5.0	t 8
 Episode 170	Steps 82353	Score -16.4	Avg100 -20.2	Eps 0.753	Loss 0.088	Q -5.6	t 9.6 min
 Episode 180	Steps 90364	Score -16.7	Avg100 -20.6	Eps 0.729	Loss 0.082	Q -5.9	t 10.7 min
 Episode 190	Steps 98639	Score -20.8	Avg100 -20.8	Eps 0.704	Loss 0.096	Q -6.1	t 11.9 min
+  [EVAL] steps 100000: mean -48.0 std 33.9 min -72.9 max 28.0  -> new best, saved checkpoint_CarRacing-v3_best.pth
+Episode 200	Steps 106798	Score 30.6	Avg100 -19.8	Eps 0.680	Loss 0.185	Q -6.2	t 13.2 min
+Episode 210	Steps 114817	Score 32.3	Avg100 -17.3	Eps 0.656	Loss 0.219	Q -6.5	t 14.3 min
+Episode 220	Steps 121524	Score 1.3	Avg100 -14.4	Eps 0.635	Loss 0.268	Q -6.4	t 15.3 min
+Episode 230	Steps 128360	Score 12.5	Avg100 -10.1	Eps 0.615	Loss 0.186	Q -6.7	t 16.2 min
+Episode 240	Steps 135931	Score 8.2	Avg100 -6.1	Eps 0.592	Loss 0.151	Q -6.7	t 17.3 min
+Episode 250	Steps 142136	Score 25.2	Avg100 -1.9	Eps 0.574	Loss 0.232	Q -6.5	t 18.2 min
+Episode 260	Steps 147815	Score 11.6	Avg100 2.9	Eps 0.557	Loss 0.222	Q -6.7	t 19.0 min
+  [EVAL] steps 150002: mean -34.3 std 47.5 min -74.6 max 48.0  -> new best, saved checkpoint_CarRacing-v3_best.pth
+Episode 270	Steps 153735	Score 47.2	Avg100 7.1	Eps 0.539	Loss 0.091	Q -6.6	t 20.0 min
+Episode 280	Steps 160267	Score 38.1	Avg100 11.2	Eps 0.519	Loss 0.367	Q -6.2	t 21.0 min
+Episode 290	Steps 164791	Score 35.1	Avg100 15.8	Eps 0.506	Loss 0.235	Q -6.4	t 21.6 min
+Episode 300	Steps 170025	Score 41.9	Avg100 18.7	Eps 0.490	Loss 0.219	Q -6.5	t 22.4 min
+Episode 310	Steps 175270	Score 40.5	Avg100 22.1	Eps 0.474	Loss 0.283	Q -6.0	t 23.1 min
+Episode 320	Steps 179236	Score 24.2	Avg100 24.1	Eps 0.462	Loss 0.325	Q -6.0	t 23.7 min
+Episode 330	Steps 184293	Score 29.8	Avg100 26.8	Eps 0.447	Loss 0.169	Q -5.9	t 24.4 min
+Episode 340	Steps 188868	Score 36.9	Avg100 30.5	Eps 0.433	Loss 0.443	Q -5.2	t 25.1 min
+Episode 350	Steps 192828	Score 22.1	Avg100 32.3	Eps 0.422	Loss 0.164	Q -4.8	t 25.6 min
+Episode 360	Steps 197112	Score 31.2	Avg100 34.1	Eps 0.409	Loss 0.219	Q -5.3	t 26.3 min
+  [EVAL] steps 200001: mean -53.8 std 25.7 min -69.3 max 18.8
+Episode 370	Steps 200559	Score 38.4	Avg100 36.2	Eps 0.398	Loss 0.491	Q -3.9	t 26.9 min
+Episode 380	Steps 205056	Score 71.4	Avg100 38.1	Eps 0.385	Loss 0.296	Q -3.6	t 27.6 min
+Episode 390	Steps 208887	Score 68.8	Avg100 40.0	Eps 0.373	Loss 0.404	Q -3.2	t 28.1 min
+Episode 400	Steps 212464	Score 30.2	Avg100 41.1	Eps 0.363	Loss 0.568	Q -1.3	t 28.7 min
+Episode 410	Steps 216812	Score 34.8	Avg100 40.9	Eps 0.350	Loss 0.501	Q -2.4	t 29.3 min
+Episode 420	Steps 221467	Score 35.9	Avg100 44.5	Eps 0.336	Loss 0.263	Q -1.3	t 29.9 min
+Episode 430	Steps 231098	Score 188.3	Avg100 59.8	Eps 0.307	Loss 0.617	Q 2.1	t 31.3 min
+Episode 440	Steps 240806	Score 274.6	Avg100 77.6	Eps 0.278	Loss 0.663	Q 4.5	t 32.7 min
+Episode 450	Steps 249553	Score 265.8	Avg100 102.1	Eps 0.251	Loss 0.436	Q 5.9	t 34.0 min
+  [EVAL] steps 250005: mean 350.5 std 98.1 min 149.1 max 509.8  -> new best, saved checkpoint_CarRacing-v3_best.pth
+Episode 460	Steps 257563	Score 262.4	Avg100 121.6	Eps 0.227	Loss 0.624	Q 9.9	t 35.6 min
+Episode 470	Steps 268476	Score 490.0	Avg100 157.1	Eps 0.195	Loss 0.949	Q 12.5	t 37.2 min
+Episode 480	Steps 278988	Score 388.3	Avg100 191.7	Eps 0.163	Loss 0.864	Q 14.0	t 38.7 min
+Episode 490	Steps 288284	Score 498.0	Avg100 227.0	Eps 0.135	Loss 1.066	Q 21.1	t 40.1 min
+Episode 500	Steps 297563	Score 664.1	Avg100 273.3	Eps 0.107	Loss 1.288	Q 26.8	t 41.4 min
+  [EVAL] steps 300003: mean 824.1 std 87.6 min 561.0 max 927.7  -> new best, saved checkpoint_CarRacing-v3_best.pth
+Episode 510	Steps 308476	Score 618.4	Avg100 339.2	Eps 0.099	Loss 1.331	Q 35.0	t 43.5 min
+Episode 520	Steps 318988	Score 682.7	Avg100 402.8	Eps 0.097	Loss 1.242	Q 40.4	t 45.0 min
+Episode 530	Steps 328284	Score 687.8	Avg100 450.8	Eps 0.096	Loss 0.857	Q 42.9	t 46.3 min
+Episode 540	Steps 337563	Score 806.1	Avg100 502.3	Eps 0.094	Loss 1.053	Q 49.0	t 47.7 min
+Episode 550	Steps 348476	Score 885.5	Avg100 552.1	Eps 0.093	Loss 0.902	Q 53.4	t 49.2 min
+  [EVAL] steps 350001: mean 566.9 std 200.9 min 268.1 max 843.1
+Episode 560	Steps 358456	Score 904.1	Avg100 610.0	Eps 0.091	Loss 1.014	Q 63.1	t 51.1 min
+Episode 570	Steps 366501	Score 415.5	Avg100 640.7	Eps 0.090	Loss 0.762	Q 65.7	t 52.3 min
+Episode 580	Steps 377551	Score 794.6	Avg100 680.1	Eps 0.088	Loss 0.793	Q 74.0	t 53.9 min
+Episode 590	Steps 387722	Score 885.2	Avg100 722.9	Eps 0.087	Loss 1.219	Q 76.9	t 55.3 min
+Episode 600	Steps 395642	Score 910.4	Avg100 747.2	Eps 0.086	Loss 1.324	Q 76.0	t 56.5 min
+  [EVAL] steps 400005: mean 741.6 std 168.7 min 434.8 max 926.6
+Episode 610	Steps 405205	Score 907.7	Avg100 760.1	Eps 0.084	Loss 0.752	Q 84.5	t 58.4 min
+Episode 620	Steps 414985	Score 523.0	Avg100 768.3	Eps 0.083	Loss 1.146	Q 87.7	t 59.8 min
+Episode 630	Steps 423834	Score 911.1	Avg100 786.7	Eps 0.081	Loss 1.025	Q 90.2	t 61.0 min
+Episode 640	Steps 433636	Score 795.6	Avg100 791.1	Eps 0.080	Loss 1.044	Q 93.6	t 62.4 min
+Episode 650	Steps 442200	Score 814.6	Avg100 780.4	Eps 0.079	Loss 1.010	Q 94.0	t 63.6 min
+  [EVAL] steps 450006: mean 740.8 std 155.3 min 448.9 max 923.8
+Episode 660	Steps 450554	Score 860.5	Avg100 780.9	Eps 0.077	Loss 1.094	Q 92.4	t 65.4 min
+Episode 670	Steps 461093	Score 903.7	Avg100 797.4	Eps 0.076	Loss 0.841	Q 98.7	t 66.9 min
+Episode 680	Steps 470248	Score 906.0	Avg100 807.3	Eps 0.074	Loss 1.226	Q 97.4	t 68.2 min
+Episode 690	Steps 480912	Score 902.2	Avg100 810.5	Eps 0.073	Loss 1.233	Q 96.8	t 69.7 min
+Episode 700	Steps 488910	Score 718.8	Avg100 820.0	Eps 0.072	Loss 0.877	Q 100.8	t 70.9 min
+  [EVAL] steps 500003: mean 895.9 std 28.9 min 796.2 max 928.8  -> new best, saved checkpoint_CarRacing-v3_best.pth
+Episode 710	Steps 500203	Score 866.9	Avg100 821.9	Eps 0.070	Loss 0.788	Q 102.9	t 73.1 min
+Episode 720	Steps 509104	Score 875.1	Avg100 832.8	Eps 0.069	Loss 0.874	Q 101.3	t 74.3 min
+Episode 730	Steps 519252	Score 905.7	Avg100 837.1	Eps 0.067	Loss 0.607	Q 103.4	t 75.8 min
+Episode 740	Steps 528507	Score 900.4	Avg100 847.1	Eps 0.066	Loss 0.954	Q 100.3	t 77.1 min
+Episode 750	Steps 538055	Score 915.0	Avg100 870.2	Eps 0.064	Loss 0.882	Q 102.2	t 78.5 min
+Episode 760	Steps 546632	Score 893.2	Avg100 877.5	Eps 0.063	Loss 0.597	Q 105.0	t 79.7 min
+  [EVAL] steps 550006: mean 859.3 std 119.7 min 400.0 max 925.0
+Episode 770	Steps 557298	Score 906.1	Avg100 879.5	Eps 0.061	Loss 0.654	Q 104.1	t 81.8 min
+Episode 780	Steps 565873	Score 913.1	Avg100 879.7	Eps 0.060	Loss 0.769	Q 107.3	t 83.0 min
+Episode 790	Steps 574155	Score 887.3	Avg100 883.3	Eps 0.059	Loss 2.175	Q 107.0	t 84.2 min
+Episode 800	Steps 584512	Score 823.3	Avg100 888.7	Eps 0.057	Loss 0.988	Q 108.4	t 85.7 min
+Episode 810	Steps 594372	Score 899.6	Avg100 889.8	Eps 0.056	Loss 0.902	Q 103.4	t 87.1 min
+  [EVAL] steps 600000: mean 831.6 std 128.2 min 538.8 max 931.1
+Episode 820	Steps 602582	Score 893.7	Avg100 886.1	Eps 0.055	Loss 1.010	Q 106.8	t 88.8 min
+Episode 830	Steps 611391	Score 897.8	Avg100 886.0	Eps 0.053	Loss 1.533	Q 103.3	t 90.1 min
+Episode 840	Steps 623264	Score 879.1	Avg100 881.1	Eps 0.052	Loss 1.230	Q 106.4	t 91.8 min
+Episode 850	Steps 632007	Score 823.8	Avg100 878.5	Eps 0.050	Loss 1.124	Q 111.1	t 93.1 min
+Episode 860	Steps 641102	Score 887.3	Avg100 876.6	Eps 0.049	Loss 0.926	Q 105.6	t 94.4 min
+Episode 870	Steps 649128	Score 881.8	Avg100 876.2	Eps 0.048	Loss 1.342	Q 111.1	t 95.5 min
+  [EVAL] steps 650002: mean 857.9 std 44.9 min 722.4 max 897.0
+Episode 880	Steps 659844	Score 897.0	Avg100 875.6	Eps 0.046	Loss 1.035	Q 107.7	t 97.6 min
+Episode 890	Steps 669847	Score 895.1	Avg100 874.0	Eps 0.045	Loss 1.413	Q 108.5	t 99.1 min
+Episode 900	Steps 678046	Score 823.3	Avg100 869.8	Eps 0.043	Loss 1.170	Q 106.1	t 100.2 min
+Episode 910	Steps 687896	Score 896.8	Avg100 873.9	Eps 0.042	Loss 1.202	Q 108.6	t 101.7 min
+Episode 920	Steps 696728	Score 910.4	Avg100 878.3	Eps 0.040	Loss 1.126	Q 108.1	t 102.9 min
+  [EVAL] steps 700005: mean 902.3 std 24.3 min 833.8 max 926.0  -> new best, saved checkpoint_CarRacing-v3_best.pth
+Episode 930	Steps 705333	Score 915.5	Avg100 877.4	Eps 0.039	Loss 1.192	Q 103.4	t 104.7 min
+Episode 940	Steps 715710	Score 664.2	Avg100 882.0	Eps 0.038	Loss 1.469	Q 102.7	t 106.2 min
+Episode 950	Steps 722335	Score 927.9	Avg100 884.1	Eps 0.037	Loss 1.010	Q 111.9	t 107.2 min
+Episode 960	Steps 732483	Score 893.3	Avg100 885.0	Eps 0.035	Loss 1.095	Q 108.9	t 108.6 min
+Episode 970	Steps 742416	Score 899.4	Avg100 886.9	Eps 0.034	Loss 1.553	Q 104.9	t 110.1 min
+  [EVAL] steps 750005: mean 876.3 std 60.9 min 702.0 max 925.7
+Episode 980	Steps 750010	Score 892.2	Avg100 882.6	Eps 0.032	Loss 1.192	Q 112.2	t 111.7 min
+Episode 990	Steps 758601	Score 775.7	Avg100 882.5	Eps 0.031	Loss 1.424	Q 116.3	t 112.9 min
+Episode 1000	Steps 768179	Score 898.8	Avg100 886.9	Eps 0.030	Loss 1.468	Q 107.4	t 114.3 min
+Episode 1010	Steps 778971	Score 926.7	Avg100 886.5	Eps 0.028	Loss 1.327	Q 111.4	t 115.8 min
+Episode 1020	Steps 785840	Score 907.6	Avg100 881.7	Eps 0.027	Loss 1.465	Q 111.8	t 116.8 min
+Episode 1030	Steps 796936	Score 884.3	Avg100 879.1	Eps 0.025	Loss 1.403	Q 113.5	t 118.4 min
+  [EVAL] steps 800007: mean 852.2 std 97.0 min 587.9 max 927.2
+Episode 1040	Steps 805443	Score 911.3	Avg100 880.1	Eps 0.024	Loss 1.729	Q 107.6	t 120.2 min
+Episode 1050	Steps 813767	Score 736.6	Avg100 879.3	Eps 0.023	Loss 1.911	Q 104.4	t 121.4 min
+Episode 1060	Steps 823633	Score 894.0	Avg100 880.3	Eps 0.021	Loss 2.607	Q 117.6	t 122.8 min
+Episode 1070	Steps 831124	Score 898.0	Avg100 879.2	Eps 0.020	Loss 1.603	Q 107.7	t 123.9 min
+Episode 1080	Steps 841699	Score 889.7	Avg100 885.7	Eps 0.019	Loss 2.287	Q 108.8	t 125.4 min
+  [EVAL] steps 850000: mean 848.0 std 119.4 min 455.9 max 928.0
+Episode 1090	Steps 851354	Score 801.8	Avg100 884.7	Eps 0.017	Loss 1.632	Q 116.2	t 127.3 min
+Episode 1100	Steps 860097	Score 884.3	Avg100 883.1	Eps 0.016	Loss 1.187	Q 105.6	t 128.5 min
+Episode 1110	Steps 868285	Score 926.5	Avg100 883.5	Eps 0.015	Loss 1.766	Q 108.9	t 129.7 min
+Episode 1120	Steps 876896	Score 675.4	Avg100 886.9	Eps 0.013	Loss 1.465	Q 111.4	t 131.0 min
+Episode 1130	Steps 887210	Score 906.2	Avg100 888.4	Eps 0.012	Loss 2.426	Q 117.8	t 132.5 min
+Episode 1140	Steps 895046	Score 925.2	Avg100 887.0	Eps 0.011	Loss 0.981	Q 112.6	t 133.6 min
+  [EVAL] steps 900007: mean 848.1 std 127.2 min 363.8 max 929.1
+Episode 1150	Steps 903487	Score 861.7	Avg100 886.3	Eps 0.010	Loss 2.220	Q 115.6	t 135.3 min
+Episode 1160	Steps 913267	Score 886.6	Avg100 887.4	Eps 0.010	Loss 1.797	Q 114.5	t 136.7 min
+Episode 1170	Steps 921064	Score 914.7	Avg100 882.0	Eps 0.010	Loss 2.633	Q 110.4	t 137.8 min
+Episode 1180	Steps 930170	Score 896.2	Avg100 878.5	Eps 0.010	Loss 2.004	Q 106.7	t 139.1 min
+Episode 1190	Steps 938713	Score 592.6	Avg100 877.7	Eps 0.010	Loss 1.357	Q 111.9	t 140.4 min
+Episode 1200	Steps 948628	Score 899.8	Avg100 874.7	Eps 0.010	Loss 1.784	Q 112.9	t 141.8 min
+  [EVAL] steps 950006: mean 866.9 std 57.4 min 650.9 max 893.6
+Episode 1210	Steps 957304	Score 896.8	Avg100 874.0	Eps 0.010	Loss 1.476	Q 105.2	t 143.5 min
+Episode 1220	Steps 964302	Score 898.6	Avg100 872.7	Eps 0.010	Loss 2.052	Q 112.8	t 144.6 min
+Episode 1230	Steps 974259	Score 899.2	Avg100 875.8	Eps 0.010	Loss 1.695	Q 109.8	t 146.0 min
+Episode 1240	Steps 983898	Score 911.0	Avg100 874.2	Eps 0.010	Loss 2.193	Q 104.4	t 147.4 min
+Episode 1250	Steps 990915	Score 913.9	Avg100 875.7	Eps 0.010	Loss 1.081	Q 101.4	t 148.4 min
+  [EVAL] steps 1000005: mean 879.7 std 45.2 min 713.1 max 924.4
+Episode 1260	Steps 1000372	Score 909.3	Avg100 875.4	Eps 0.010	Loss 1.189	Q 105.7	t 150.3 min
+Episode 1270	Steps 1009129	Score 900.0	Avg100 881.4	Eps 0.010	Loss 0.856	Q 110.4	t 151.6 min
+Episode 1280	Steps 1018556	Score 887.3	Avg100 883.7	Eps 0.010	Loss 1.974	Q 114.1	t 153.0 min
+Episode 1290	Steps 1026552	Score 888.2	Avg100 881.4	Eps 0.010	Loss 1.748	Q 108.9	t 154.1 min
+Episode 1300	Steps 1036108	Score 906.6	Avg100 883.0	Eps 0.010	Loss 1.474	Q 111.1	t 155.5 min
+Episode 1310	Steps 1046415	Score 906.6	Avg100 883.6	Eps 0.010	Loss 1.453	Q 107.1	t 157.0 min
+  [EVAL] steps 1050005: mean 874.4 std 60.4 min 644.9 max 922.6
+Episode 1320	Steps 1053478	Score 921.3	Avg100 886.6	Eps 0.010	Loss 1.953	Q 110.2	t 158.5 min
+Episode 1330	Steps 1060999	Score 892.1	Avg100 885.6	Eps 0.010	Loss 1.650	Q 109.0	t 159.6 min
+Episode 1340	Steps 1071388	Score 886.5	Avg100 887.9	Eps 0.010	Loss 1.297	Q 105.2	t 161.1 min
+Episode 1350	Steps 1080385	Score 846.0	Avg100 888.3	Eps 0.010	Loss 2.462	Q 105.7	t 162.4 min
+Episode 1360	Steps 1088813	Score 894.2	Avg100 888.4	Eps 0.010	Loss 1.765	Q 112.3	t 163.6 min
+Episode 1370	Steps 1098119	Score 876.0	Avg100 888.0	Eps 0.010	Loss 1.921	Q 113.8	t 164.9 min
+  [EVAL] steps 1100005: mean 856.7 std 103.3 min 458.3 max 896.7
+Episode 1380	Steps 1107476	Score 889.2	Avg100 888.0	Eps 0.010	Loss 1.779	Q 101.5	t 166.8 min
+Episode 1390	Steps 1116101	Score 873.2	Avg100 891.7	Eps 0.010	Loss 1.810	Q 105.8	t 168.0 min
+Episode 1400	Steps 1125178	Score 883.5	Avg100 893.4	Eps 0.010	Loss 1.161	Q 108.9	t 169.3 min
+Episode 1410	Steps 1135052	Score 897.0	Avg100 892.7	Eps 0.010	Loss 2.269	Q 114.1	t 170.7 min
+Episode 1420	Steps 1143156	Score 920.1	Avg100 892.8	Eps 0.010	Loss 1.579	Q 103.6	t 171.9 min
+  [EVAL] steps 1150005: mean 879.2 std 32.3 min 811.2 max 930.7
+Episode 1430	Steps 1151623	Score 911.7	Avg100 892.3	Eps 0.010	Loss 2.882	Q 115.5	t 173.6 min
+Episode 1440	Steps 1161882	Score 884.0	Avg100 893.8	Eps 0.010	Loss 1.783	Q 118.6	t 175.1 min
+Episode 1450	Steps 1169047	Score 917.0	Avg100 886.6	Eps 0.010	Loss 2.000	Q 104.1	t 176.2 min
+Episode 1460	Steps 1178400	Score 896.9	Avg100 885.7	Eps 0.010	Loss 1.084	Q 117.4	t 177.5 min
+Episode 1470	Steps 1188025	Score 890.6	Avg100 881.9	Eps 0.010	Loss 2.266	Q 98.4	t 178.9 min
+Episode 1480	Steps 1197005	Score 890.8	Avg100 879.9	Eps 0.010	Loss 1.177	Q 98.9	t 180.2 min
+  [EVAL] steps 1200005: mean 891.8 std 14.4 min 879.7 max 927.9
+Episode 1490	Steps 1204832	Score 880.3	Avg100 880.7	Eps 0.010	Loss 1.101	Q 106.7	t 181.8 min
+Episode 1500	Steps 1215832	Score 892.1	Avg100 880.8	Eps 0.010	Loss 2.868	Q 95.6	t 183.4 min
+Episode 1510	Steps 1223830	Score 853.5	Avg100 881.1	Eps 0.010	Loss 1.348	Q 109.8	t 184.6 min
+Episode 1520	Steps 1232322	Score 906.7	Avg100 881.7	Eps 0.010	Loss 2.098	Q 99.5	t 185.8 min
+Episode 1530	Steps 1240155	Score 885.8	Avg100 880.8	Eps 0.010	Loss 3.242	Q 102.3	t 186.9 min
+  [EVAL] steps 1250005: mean 887.9 std 17.5 min 856.2 max 927.9
+Episode 1540	Steps 1251723	Score 902.8	Avg100 880.0	Eps 0.010	Loss 0.902	Q 100.4	t 189.1 min
+Episode 1550	Steps 1259848	Score 900.9	Avg100 887.0	Eps 0.010	Loss 1.490	Q 107.5	t 190.3 min
+Episode 1560	Steps 1268067	Score 899.7	Avg100 887.0	Eps 0.010	Loss 1.622	Q 108.1	t 191.5 min
+Episode 1570	Steps 1276835	Score 891.2	Avg100 890.4	Eps 0.010	Loss 1.227	Q 106.9	t 192.8 min
+Episode 1580	Steps 1286596	Score 899.5	Avg100 892.8	Eps 0.010	Loss 1.818	Q 93.6	t 194.2 min
+Episode 1590	Steps 1295382	Score 906.8	Avg100 890.4	Eps 0.010	Loss 1.550	Q 102.1	t 195.5 min
+  [EVAL] steps 1300007: mean 888.5 std 6.9 min 875.0 max 896.5
+Episode 1600	Steps 1304049	Score 890.7	Avg100 892.1	Eps 0.010	Loss 4.808	Q 97.6	t 197.3 min
+Episode 1610	Steps 1314611	Score 892.6	Avg100 892.5	Eps 0.010	Loss 1.329	Q 105.1	t 198.9 min
+Episode 1620	Steps 1322868	Score 898.2	Avg100 891.3	Eps 0.010	Loss 1.963	Q 103.5	t 200.1 min
+Episode 1630	Steps 1331661	Score 886.5	Avg100 893.0	Eps 0.010	Loss 1.286	Q 107.3	t 201.3 min
+Episode 1640	Steps 1340231	Score 896.9	Avg100 888.8	Eps 0.010	Loss 2.052	Q 90.4	t 202.6 min
+Episode 1650	Steps 1348229	Score 896.8	Avg100 887.9	Eps 0.010	Loss 2.198	Q 112.2	t 203.7 min
+  [EVAL] steps 1350006: mean 885.8 std 27.4 min 826.3 max 927.0
+Episode 1660	Steps 1359881	Score 897.0	Avg100 885.6	Eps 0.010	Loss 2.150	Q 104.8	t 206.0 min
+Episode 1670	Steps 1368374	Score 570.4	Avg100 881.7	Eps 0.010	Loss 0.874	Q 110.6	t 207.2 min
+Episode 1680	Steps 1376555	Score 901.1	Avg100 876.0	Eps 0.010	Loss 1.891	Q 107.2	t 208.4 min
+Episode 1690	Steps 1385648	Score 879.6	Avg100 877.2	Eps 0.010	Loss 2.597	Q 105.9	t 209.7 min
+Episode 1700	Steps 1395852	Score 887.3	Avg100 875.8	Eps 0.010	Loss 1.192	Q 110.2	t 211.2 min
+  [EVAL] steps 1400006: mean 873.8 std 38.6 min 732.8 max 909.1
+Episode 1710	Steps 1404248	Score 887.7	Avg100 873.8	Eps 0.010	Loss 1.810	Q 99.3	t 213.0 min
+Episode 1720	Steps 1412225	Score 898.1	Avg100 873.6	Eps 0.010	Loss 2.066	Q 113.1	t 214.2 min
+Episode 1730	Steps 1421245	Score 872.9	Avg100 872.5	Eps 0.010	Loss 2.813	Q 108.4	t 215.5 min
+Episode 1740	Steps 1430919	Score 896.2	Avg100 877.3	Eps 0.010	Loss 2.070	Q 111.3	t 216.9 min
+Episode 1750	Steps 1440243	Score 879.7	Avg100 876.8	Eps 0.010	Loss 2.591	Q 91.1	t 218.3 min
+Episode 1760	Steps 1448764	Score 887.9	Avg100 876.7	Eps 0.010	Loss 2.253	Q 103.3	t 219.5 min
+  [EVAL] steps 1450006: mean 883.3 std 17.8 min 854.2 max 931.9
+Episode 1770	Steps 1456816	Score 892.9	Avg100 880.6	Eps 0.010	Loss 2.397	Q 98.5	t 221.2 min
+Episode 1780	Steps 1467336	Score 901.7	Avg100 881.4	Eps 0.010	Loss 1.760	Q 116.5	t 222.8 min
+Episode 1790	Steps 1476548	Score 899.5	Avg100 882.3	Eps 0.010	Loss 1.547	Q 90.9	t 224.1 min
+Episode 1800	Steps 1484985	Score 884.1	Avg100 882.7	Eps 0.010	Loss 1.732	Q 100.3	t 225.4 min
+Episode 1810	Steps 1492908	Score 878.1	Avg100 883.2	Eps 0.010	Loss 1.537	Q 100.9	t 226.5 min
+  [EVAL] steps 1498185: mean 877.3 std 17.7 min 830.8 max 922.8
+Done in 227.9 min. Best eval mean 902.3

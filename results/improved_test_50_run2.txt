@@ -1,0 +1,56 @@
+Episode 1	Reward 866.6
+Episode 2	Reward 912.6
+Episode 3	Reward 885.5
+Episode 4	Reward 770.3
+Episode 5	Reward 890.2
+Episode 6	Reward 775.9
+Episode 7	Reward 893.0
+Episode 8	Reward 917.3
+Episode 9	Reward 910.0
+Episode 10	Reward 843.5
+Episode 11	Reward 917.9
+Episode 12	Reward 896.5
+Episode 13	Reward 885.7
+Episode 14	Reward 885.5
+Episode 15	Reward 896.7
+Episode 16	Reward 897.0
+Episode 17	Reward 922.5
+Episode 18	Reward 911.2
+Episode 19	Reward 893.8
+Episode 20	Reward 922.3
+Episode 21	Reward 914.9
+Episode 22	Reward 929.6
+Episode 23	Reward 896.7
+Episode 24	Reward 905.8
+Episode 25	Reward 889.7
+Episode 26	Reward 742.8
+Episode 27	Reward 919.2
+Episode 28	Reward 881.7
+Episode 29	Reward 896.5
+Episode 30	Reward 896.6
+Episode 31	Reward 875.5
+Episode 32	Reward 896.7
+Episode 33	Reward 896.1
+Episode 34	Reward 893.9
+Episode 35	Reward 896.8
+Episode 36	Reward 889.8
+Episode 37	Reward 864.3
+Episode 38	Reward 918.8
+Episode 39	Reward 922.9
+Episode 40	Reward 863.1
+Episode 41	Reward 926.0
+Episode 42	Reward 880.4
+Episode 43	Reward 910.1
+Episode 44	Reward 883.1
+Episode 45	Reward 916.8
+Episode 46	Reward 887.1
+Episode 47	Reward 906.5
+Episode 48	Reward 893.7
+Episode 49	Reward 710.7
+Episode 50	Reward 915.2
+----------------------------------------
+Episodes : 50
+Mean     : 886.3
+Std      : 44.5
+Min      : 710.7
+Max      : 929.6

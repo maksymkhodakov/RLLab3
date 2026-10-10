@@ -1,0 +1,56 @@
+Episode 1	Reward 880.3
+Episode 2	Reward 887.5
+Episode 3	Reward 871.9
+Episode 4	Reward 869.6
+Episode 5	Reward 889.2
+Episode 6	Reward 924.9
+Episode 7	Reward 892.6
+Episode 8	Reward 400.0
+Episode 9	Reward 916.0
+Episode 10	Reward 784.5
+Episode 11	Reward 870.8
+Episode 12	Reward 881.0
+Episode 13	Reward 852.0
+Episode 14	Reward 849.4
+Episode 15	Reward 865.5
+Episode 16	Reward 890.0
+Episode 17	Reward 889.4
+Episode 18	Reward 889.6
+Episode 19	Reward 801.4
+Episode 20	Reward 868.6
+Episode 21	Reward 879.2
+Episode 22	Reward 892.9
+Episode 23	Reward 870.7
+Episode 24	Reward 889.1
+Episode 25	Reward 892.2
+Episode 26	Reward 882.1
+Episode 27	Reward 932.6
+Episode 28	Reward 828.9
+Episode 29	Reward 865.7
+Episode 30	Reward 934.8
+Episode 31	Reward 870.2
+Episode 32	Reward 883.2
+Episode 33	Reward 893.3
+Episode 34	Reward 882.3
+Episode 35	Reward 892.6
+Episode 36	Reward 892.8
+Episode 37	Reward 526.2
+Episode 38	Reward 925.3
+Episode 39	Reward 862.4
+Episode 40	Reward 875.8
+Episode 41	Reward 807.3
+Episode 42	Reward 892.9
+Episode 43	Reward 887.8
+Episode 44	Reward 869.4
+Episode 45	Reward 892.2
+Episode 46	Reward 889.8
+Episode 47	Reward 893.8
+Episode 48	Reward 848.3
+Episode 49	Reward 853.0
+Episode 50	Reward 877.0
+----------------------------------------
+Episodes : 50
+Mean     : 861.2
+Std      : 87.1
+Min      : 400.0
+Max      : 934.8
