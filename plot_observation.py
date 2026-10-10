@@ -19,6 +19,8 @@ OUT = os.path.join("results", "figures", "observation.png")
 
 
 def main():
+    """Зняти кадр із сирого та обгорнутого середовищ (той самий seed траси) і
+    зберегти рисунок з 5 панелей: RGB-оригінал + 4 кадри стеку."""
     # Сире середовище -- щоб показати оригінальний RGB-кадр
     raw = gym.make("CarRacing-v3", continuous=False)
     env = make_env()
@@ -27,13 +29,14 @@ def main():
     # Проїжджаємо трохи вперед (газ), щоб пройти анімацію наближення камери
     # і щоб у стеку кадрів був помітний рух
     for t in range(70):
-        a = 3 if t % 6 else 0
+        a = 3 if t % 6 else 0   # 3 = газ, 0 = нічого (щоб не розганятися надто сильно)
         rgb, *_ = raw.step(a)
         stack, *_ = env.step(a)
 
     fig, axes = plt.subplots(1, 5, figsize=(15, 3.4))
     axes[0].imshow(rgb)
     axes[0].set_title("RGB 96×96×3 (оригінал)")
+    # stack має форму (4, 84, 84): індекс 0 -- найстаріший кадр, 3 -- поточний
     for k in range(4):
         axes[k + 1].imshow(np.asarray(stack)[k], cmap="gray", vmin=0, vmax=255)
         axes[k + 1].set_title(f"Кадр t−{3 - k}: 84×84, сірий")

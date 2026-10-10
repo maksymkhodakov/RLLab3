@@ -23,7 +23,9 @@
    вважаємо стан термінальним (у бейзлайні done = terminated OR truncated).
 5. Компактний replay-буфер: кожне спостереження зберігається лише один раз
    (наступний стан -- це просто наступна комірка того самого потоку
-   середовища), тому при тій самій пам'яті буфер утричі більший (120k проти 50k).
+   середовища), тому на один перехід припадає вдвічі менше пам'яті, і буфер
+   у 2,4 раза більший за бейзлайн (120k проти 50k переходів) при ~3,4 ГБ
+   пам'яті проти ~2,8 ГБ.
 6. Розклад epsilon за кроками (кусково-лінійний 1.0 -> 0.1 -> 0.01) замість
    мультиплікативного згасання за епізодами; косинусне зменшення learning rate;
    м'яке (Polyak) оновлення цільової мережі.
@@ -120,15 +122,19 @@ class NoProgressTruncation(gym.Wrapper):
     """
 
     def __init__(self, env, patience=100):
+        """env -- обгорнуте середовище; patience -- допустима кількість кроків
+        поспіль без позитивної нагороди."""
         super().__init__(env)
         self.patience = patience
         self.no_progress = 0  # лічильник кроків без позитивної нагороди
 
     def reset(self, **kwargs):
+        """Новий епізод -- обнуляємо лічильник кроків без прогресу."""
         self.no_progress = 0
         return self.env.reset(**kwargs)
 
     def step(self, action):
+        """Звичайний крок середовища + перевірка, чи не час обірвати епізод."""
         obs, reward, terminated, truncated, info = self.env.step(action)
         if reward > 0:
             self.no_progress = 0
@@ -177,6 +183,14 @@ class QNetwork(nn.Module):
     """
 
     def __init__(self, in_channels=FRAME_STACK, a_size=5):
+        """in_channels -- кількість кадрів у стеку (4); a_size -- кількість дій (5).
+
+        Сигнатура сумісна з тестовим скриптом: QNetwork(a_size=env.action_space.n).
+        Розмірності після згорток (вхід 84x84):
+          conv1: 8x8, крок 4 -> 20x20x32;  conv2: 4x4, крок 2 -> 9x9x64;
+          conv3: 3x3, крок 1 -> 7x7x64  =>  3136 ознак.
+        Параметрів: ~3,29 млн (бейзлайн -- ~1,69 млн; додалась друга гілка 3136->512).
+        """
         super().__init__()
         self.a_size = a_size
 
@@ -193,6 +207,7 @@ class QNetwork(nn.Module):
         self.advantage = nn.Linear(512, a_size)
 
     def forward(self, x):
+        """x: (B, 4, 84, 84) uint8 або float -> Q-значення (B, a_size)."""
         # Кадри зберігаються як uint8 [0, 255]; нормалізуємо до [0, 1] вже на пристрої
         x = x.float() / 255.0
         x = F.relu(self.conv1(x))
@@ -205,6 +220,7 @@ class QNetwork(nn.Module):
         return v + a - a.mean(dim=1, keepdim=True)      # (B, A)
 
     def _device(self):
+        """Пристрій, на якому зараз лежать ваги мережі."""
         # Пристрій беремо з параметрів моделі, щоб act() працював і на CPU
         # (тестовий скрипт), і на MPS/CUDA (тренування).
         return next(self.parameters()).device
@@ -255,6 +271,9 @@ class NStepReplayBuffer:
     """
 
     def __init__(self, num_envs, capacity_per_env, obs_shape, n_step=3, gamma=0.99):
+        """num_envs -- кількість паралельних середовищ (стрічок); capacity_per_env --
+        комірок на стрічку; obs_shape -- (4, 84, 84); n_step -- довжина повернення;
+        gamma -- коефіцієнт дисконтування."""
         self.E = num_envs
         self.C = capacity_per_env
         self.n = n_step
@@ -302,10 +321,21 @@ class NStepReplayBuffer:
         return lo, hi
 
     def __len__(self):
+        """Кількість індексів, з яких можна почати n-кроковий перехід (з урахуванням
+        і невалідних кроків автоскидання -- їх частка мізерна)."""
         lo, hi = self._window()
         return max(0, hi - lo + 1) * self.E
 
     def sample(self, batch_size, to_device):
+        """Випадковий мінібатч валідних переходів.
+
+        Повертає тензори на ``to_device``:
+          states      (B, 4, 84, 84) uint8 -- s_j;
+          actions     (B, 1) int64         -- a_j;
+          returns     (B, 1) float32       -- n-крокове повернення R;
+          next_states (B, 4, 84, 84) uint8 -- s_{j+m} для бутстрепу;
+          bootstrap   (B, 1) float32       -- коефіцієнт g^m * (1 - terminated).
+        """
         lo, hi = self._window()
 
         # Відбір випадкових (середовище, індекс) з відкиданням невалідних
@@ -369,9 +399,24 @@ EPSILON_SCHEDULE = [(0.0, 1.0), (0.2, 0.1), (0.6, 0.01)]
 # Агент
 # ---------------------------------------------------------------------------
 class DQNAgent:
+    """Агент Double DQN з n-кроковими поверненнями та м'яким оновленням цілі.
+
+    Містить онлайн-мережу (навчається), цільову мережу (повільно "наздоганяє"
+    онлайн-мережу і дає стабільну ціль), оптимізатор Adam та буфер досвіду.
+    """
+
     def __init__(self, action_dim, obs_shape, num_envs, lr=1e-4, lr_min=1e-5,
                  gamma=0.99, n_step=3, buffer_per_env=15000, batch_size=64,
                  tau=0.0025, total_updates=1):
+        """Гіперпараметри:
+          lr / lr_min       -- початковий і кінцевий learning rate косинусного розкладу;
+          gamma             -- коефіцієнт дисконтування;
+          n_step            -- довжина n-крокового повернення;
+          buffer_per_env    -- комірок буфера на одне середовище (x8 = 120 000);
+          batch_size        -- розмір мінібатчу;
+          tau               -- крок м'якого оновлення цільової мережі;
+          total_updates     -- загальна кількість оновлень (для розкладу lr).
+        """
         self.action_dim = action_dim
         self.gamma = gamma
         self.batch_size = batch_size
