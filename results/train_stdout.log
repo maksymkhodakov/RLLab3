@@ -1,0 +1,13 @@
+train device: mps, envs: 8, total steps: 1500000, updates: 370000
+Episode 10	Steps 3236	Score -3.2	Avg100 -5.0	Eps 0.990	Loss nan	Q nan	t 0.1 min
+Episode 20	Steps 6825	Score -8.8	Avg100 -11.5	Eps 0.980	Loss nan	Q nan	t 0.2 min
+Episode 30	Steps 8809	Score -15.5	Avg100 -11.2	Eps 0.974	Loss nan	Q nan	t 0.3 min
+Episode 40	Steps 11440	Score -1.4	Avg100 -9.8	Eps 0.966	Loss nan	Q nan	t 0.3 min
+Episode 50	Steps 13359	Score -2.6	Avg100 -9.9	Eps 0.960	Loss nan	Q nan	t 0.4 min
+Episode 60	Steps 15322	Score -4.3	Avg100 -9.6	Eps 0.954	Loss nan	Q nan	t 0.5 min
+Episode 70	Steps 17129	Score -3.3	Avg100 -9.1	Eps 0.949	Loss nan	Q nan	t 0.5 min
+Episode 80	Steps 19589	Score -9.3	Avg100 -9.0	Eps 0.941	Loss nan	Q nan	t 0.6 min
+Episode 90	Steps 22445	Score -8.9	Avg100 -9.1	Eps 0.933	Loss 0.187	Q -0.5	t 0.9 min
+Episode 100	Steps 25106	Score -0.5	Avg100 -8.9	Eps 0.925	Loss 0.049	Q -0.9	t 1.3 min
+Episode 110	Steps 28564	Score -2.4	Avg100 -10.0	Eps 0.914	Loss 0.089	Q -1.4	t 1.8 min
+Episode 120	Steps 36328	Score -0.8	Avg100 -10.6	Eps 0.891	Loss 0.009	Q -2.4	t 2.9 min
