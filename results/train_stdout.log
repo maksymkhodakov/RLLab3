@@ -16,3 +16,6 @@ Episode 130	Steps 44633	Score -41.3	Avg100 -13.1	Eps 0.866	Loss 0.183	Q -3.2	t 4
 Episode 140	Steps 52779	Score -21.3	Avg100 -15.6	Eps 0.842	Loss 0.315	Q -3.9	t 5.5 min
 Episode 150	Steps 63751	Score -29.8	Avg100 -17.3	Eps 0.809	Loss 0.042	Q -4.6	t 7.0 min
 Episode 160	Steps 72418	Score -24.7	Avg100 -18.9	Eps 0.783	Loss 0.080	Q -5.0	t 8.2 min
+Episode 170	Steps 82353	Score -16.4	Avg100 -20.2	Eps 0.753	Loss 0.088	Q -5.6	t 9.6 min
+Episode 180	Steps 90364	Score -16.7	Avg100 -20.6	Eps 0.729	Loss 0.082	Q -5.9	t 10.7 min
+Episode 190	Steps 98639	Score -20.8	Avg100 -20.8	Eps 0.704	Loss 0.096	Q -6.1	t 11.9 min
